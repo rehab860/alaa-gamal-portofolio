@@ -21,12 +21,14 @@ export const About = () => {
               <div className="absolute inset-2 rounded-full border border-primary/20 animate-[spin_15s_linear_infinite_reverse]" />
               <div className="absolute inset-4 bg-card rounded-full flex items-center justify-center border border-border shadow-lg shadow-primary/10 overflow-hidden">
                 <svg width="100" height="100" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  {/* A — antique gold */}
-                  <path d="M7 29L13 11L19 29" stroke="#9a7640" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M9 23H17" stroke="#9a7640" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                  <circle cx="13" cy="11" r="1.8" fill="#9a7640" />
-                  {/* G — dusty rose */}
-                  <path d="M33 15C31.5 12.5 28.5 11 25.5 11C21 11 18 14.5 18 20C18 25.5 21 29 25.5 29C28.5 29 31 27.5 32.5 25.5L27 25.5L27 20L33 20" stroke="#b85c6e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <rect width="40" height="40" rx="8" fill="#28193D" />
+                  <rect x="2" y="2" width="36" height="36" rx="6" fill="none" stroke="#46315C" strokeWidth="1" />
+                  {/* A — #B3A3BA */}
+                  <path d="M7 29L13 11L19 29" stroke="#B3A3BA" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M9 23H17" stroke="#B3A3BA" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <circle cx="13" cy="11" r="1.8" fill="#B3A3BA" />
+                  {/* G — #8D769A */}
+                  <path d="M33 15C31.5 12.5 28.5 11 25.5 11C21 11 18 14.5 18 20C18 25.5 21 29 25.5 29C28.5 29 31 27.5 32.5 25.5L27 25.5L27 20L33 20" stroke="#8D769A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
             </div>

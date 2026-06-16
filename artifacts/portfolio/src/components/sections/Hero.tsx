@@ -62,8 +62,8 @@ export const Hero = () => {
     window.addEventListener("resize", handleResize);
     
     const isDark = document.documentElement.classList.contains("dark");
-    const dotColor = isDark ? "rgba(184, 92, 110, 0.35)" : "rgba(184, 92, 110, 0.5)";
-    const lineColor = isDark ? "rgba(154, 118, 64, 0.2)" : "rgba(154, 118, 64, 0.25)";
+    const dotColor = isDark ? "rgba(179, 163, 186, 0.4)" : "rgba(104, 80, 123, 0.5)";
+    const lineColor = isDark ? "rgba(70, 49, 92, 0.5)" : "rgba(104, 80, 123, 0.25)";
     
     class Particle {
       x: number;
@@ -115,7 +115,7 @@ export const Hero = () => {
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(154, 118, 64, ${0.25 * (1 - dist/150)})`;
+            ctx.strokeStyle = `rgba(70, 49, 92, ${0.6 * (1 - dist/150)})`;
             ctx.stroke();
           }
         }

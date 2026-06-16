@@ -94,7 +94,7 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-/* LIGHT MODE */
+/* LIGHT MODE — soft violet tint */
 :root {
   --button-outline: rgba(0,0,0, .10);
   --badge-outline: rgba(0,0,0, .05);
@@ -104,55 +104,52 @@
   --elevate-1: rgba(0,0,0, .03);
   --elevate-2: rgba(0,0,0, .08);
 
-  /* warm cream #faf8f4 */
-  --background: 40 37% 97%;
-  --foreground: 25 25% 12%;
-  --border: 35 15% 88%;
+  /* soft lavender white */
+  --background: 269 30% 96%;
+  --foreground: 261 53% 7%;
+  --border: 282 14% 82%;
   
-  --card: 40 25% 99%;
-  --card-foreground: 25 25% 12%;
-  --card-border: 35 15% 88%;
+  --card: 0 0% 100%;
+  --card-foreground: 261 53% 7%;
+  --card-border: 282 14% 82%;
 
-  --sidebar: 40 25% 99%;
-  --sidebar-foreground: 25 25% 12%;
-  --sidebar-border: 35 15% 88%;
-  --sidebar-primary: 348 39% 54%;
+  --sidebar: 0 0% 100%;
+  --sidebar-foreground: 261 53% 7%;
+  --sidebar-border: 282 14% 82%;
+  --sidebar-primary: 274 21% 40%;
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 35 15% 92%;
-  --sidebar-accent-foreground: 25 25% 12%;
-  --sidebar-ring: 348 39% 54%;
+  --sidebar-accent: 269 30% 90%;
+  --sidebar-accent-foreground: 261 53% 7%;
+  --sidebar-ring: 274 21% 40%;
 
-  --popover: 40 25% 99%;
-  --popover-foreground: 25 25% 12%;
-  --popover-border: 35 15% 88%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 261 53% 7%;
+  --popover-border: 282 14% 82%;
 
-  /* dusty rose #b85c6e */
-  --primary: 348 39% 54%;
+  /* #68507B medium violet as primary */
+  --primary: 274 21% 40%;
   --primary-foreground: 0 0% 100%;
   
-  --secondary: 35 15% 92%;
-  --secondary-foreground: 25 25% 12%;
+  --secondary: 269 30% 90%;
+  --secondary-foreground: 261 53% 7%;
 
-  --muted: 35 15% 92%;
-  --muted-foreground: 25 15% 45%;
+  --muted: 269 30% 90%;
+  --muted-foreground: 278 15% 40%;
 
-  /* antique gold #9a7640 */
-  --accent: 36 41% 43%;
+  /* #8D769A lighter violet accent */
+  --accent: 278 15% 53%;
   --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 
-  --input: 35 15% 88%;
-  --ring: 348 39% 54%;
+  --input: 282 14% 82%;
+  --ring: 274 21% 40%;
   
-  /* sage green #3d7a5c */
-  --chart-1: 151 33% 36%;
-  /* antique gold */
-  --chart-2: 36 41% 43%;
-  /* dusty rose */
-  --chart-3: 348 39% 54%;
-  --chart-4: 35 15% 88%;
+  --chart-1: 278 15% 53%;
+  --chart-2: 274 21% 40%;
+  --chart-3: 282 14% 68%;
+  --chart-4: 269 30% 28%;
   --chart-5: 0 84% 60%;
 
   --app-font-sans: 'Inter', sans-serif;
@@ -189,57 +186,60 @@
   --elevate-1: rgba(255,255,255, .04);
   --elevate-2: rgba(255,255,255, .09);
 
-  /* warm dark background */
-  --background: 25 20% 8%;
-  /* warm cream text */
-  --foreground: 40 25% 95%;
-  --border: 25 15% 17%;
-  
-  --card: 25 18% 12%;
-  --card-foreground: 40 25% 95%;
-  --card-border: 25 15% 17%;
+  /* #10091D — deepest violet background */
+  --background: 261 53% 7%;
+  /* #D9D8D9 — lightest, highest contrast for name/body text */
+  --foreground: 0 1% 85%;
+  /* #46315C — border/divider */
+  --border: 269 30% 28%;
 
-  --sidebar: 25 18% 12%;
-  --sidebar-foreground: 40 25% 95%;
-  --sidebar-border: 25 15% 17%;
-  /* dusty rose */
-  --sidebar-primary: 348 39% 54%;
-  --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 25 15% 17%;
-  --sidebar-accent-foreground: 40 25% 95%;
-  --sidebar-ring: 348 39% 54%;
+  /* #28193D — card surfaces */
+  --card: 265 42% 17%;
+  --card-foreground: 0 1% 85%;
+  --card-border: 269 30% 28%;
 
-  --popover: 25 18% 12%;
-  --popover-foreground: 40 25% 95%;
-  --popover-border: 25 15% 17%;
+  --sidebar: 265 42% 17%;
+  --sidebar-foreground: 0 1% 85%;
+  --sidebar-border: 269 30% 28%;
+  /* #8D769A — primary accent */
+  --sidebar-primary: 278 15% 53%;
+  --sidebar-primary-foreground: 261 53% 7%;
+  --sidebar-accent: 269 30% 28%;
+  --sidebar-accent-foreground: 0 1% 85%;
+  --sidebar-ring: 278 15% 53%;
 
-  /* dusty rose #b85c6e */
-  --primary: 348 39% 54%;
-  --primary-foreground: 0 0% 100%;
+  --popover: 265 42% 17%;
+  --popover-foreground: 0 1% 85%;
+  --popover-border: 269 30% 28%;
 
-  --secondary: 25 15% 17%;
-  --secondary-foreground: 40 25% 95%;
+  /* #8D769A — tallest bar / subtitle / primary interactive */
+  --primary: 278 15% 53%;
+  /* #10091D dark on primary */
+  --primary-foreground: 261 53% 7%;
 
-  --muted: 25 15% 17%;
-  --muted-foreground: 25 10% 58%;
+  /* #46315C — secondary surfaces */
+  --secondary: 269 30% 28%;
+  --secondary-foreground: 0 1% 85%;
 
-  /* antique gold #9a7640 */
-  --accent: 36 41% 43%;
-  --accent-foreground: 40 25% 95%;
+  /* #28193D — muted background */
+  --muted: 265 42% 17%;
+  /* #B3A3BA — muted readable text */
+  --muted-foreground: 282 14% 68%;
+
+  /* #68507B — mid accent */
+  --accent: 274 21% 40%;
+  --accent-foreground: 0 1% 85%;
 
   --destructive: 0 62.8% 30.6%;
-  --destructive-foreground: 40 25% 95%;
+  --destructive-foreground: 0 1% 85%;
 
-  --input: 25 15% 17%;
-  --ring: 348 39% 54%;
-  
-  /* sage green */
-  --chart-1: 151 33% 36%;
-  /* antique gold */
-  --chart-2: 36 41% 43%;
-  /* dusty rose */
-  --chart-3: 348 39% 54%;
-  --chart-4: 25 15% 17%;
+  --input: 269 30% 28%;
+  --ring: 278 15% 53%;
+
+  --chart-1: 278 15% 53%;
+  --chart-2: 274 21% 40%;
+  --chart-3: 282 14% 68%;
+  --chart-4: 269 30% 28%;
   --chart-5: 0 62.8% 30.6%;
 }
 

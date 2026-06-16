@@ -7,9 +7,10 @@ export const Skills = () => {
   const skillCategories = [
     {
       title: "Tools & Technologies",
-      icon: <Wrench className="w-5 h-5" style={{ color: "#9a7640" }} />,
-      barColor: "#9a7640",
-      skills: [
+      icon: <Wrench className="w-5 h-5" style={{ color: "#8D769A" }} />,
+      barColor: "#8D769A",
+      bgTint: "#8D769A18",
+    skills: [
         { name: "Excel (Advanced)", level: 90 },
         { name: "Power BI", level: 85 },
         { name: "SQL", level: 80 },
@@ -18,8 +19,9 @@ export const Skills = () => {
     },
     {
       title: "Core Processes",
-      icon: <Settings className="w-5 h-5 text-primary" />,
-      barColor: "#b85c6e",
+      icon: <Settings className="w-5 h-5" style={{ color: "#B3A3BA" }} />,
+      barColor: "#B3A3BA",
+      bgTint: "#B3A3BA18",
       skills: [
         { name: "ETL", level: 85 },
         { name: "Data Cleaning", level: 90 },
@@ -29,8 +31,9 @@ export const Skills = () => {
     },
     {
       title: "Concepts",
-      icon: <Cpu className="w-5 h-5" style={{ color: "#3d7a5c" }} />,
-      barColor: "#3d7a5c",
+      icon: <Cpu className="w-5 h-5" style={{ color: "#68507B" }} />,
+      barColor: "#68507B",
+      bgTint: "#68507B18",
       skills: [
         { name: "Statistics", level: 80 },
         { name: "Data Modeling", level: 75 },
@@ -69,7 +72,7 @@ export const Skills = () => {
               <Card className="h-full bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/30 transition-all duration-300">
                 <CardHeader className="pb-4">
                   <CardTitle className="flex items-center gap-3 text-xl">
-                    <div className="p-2 rounded-md" style={{ backgroundColor: `${category.barColor}18` }}>
+                    <div className="p-2 rounded-md" style={{ backgroundColor: category.bgTint }}>
                       {category.icon}
                     </div>
                     {category.title}
@@ -91,7 +94,7 @@ export const Skills = () => {
                           className="h-full rounded-full relative"
                           style={{ backgroundColor: category.barColor }}
                         >
-                          <div className="absolute top-0 right-0 bottom-0 left-0 bg-gradient-to-r from-transparent to-white/20" />
+                          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white/10" />
                         </motion.div>
                       </div>
                     </div>
@@ -111,10 +114,10 @@ export const Skills = () => {
         >
           <h3 className="text-lg font-semibold mb-4 text-muted-foreground uppercase tracking-widest">Languages</h3>
           <div className="flex flex-wrap gap-4 justify-center">
-            <span className="text-sm py-1.5 px-4 rounded-full border font-medium" style={{ backgroundColor: "#3d7a5c18", borderColor: "#3d7a5c40", color: "#3d7a5c" }}>
+            <span className="text-sm py-1.5 px-4 rounded-full border font-medium" style={{ backgroundColor: "#46315C30", borderColor: "#68507B60", color: "#B3A3BA" }}>
               Arabic <span className="ml-2 font-normal opacity-80">Native</span>
             </span>
-            <span className="text-sm py-1.5 px-4 rounded-full border font-medium" style={{ backgroundColor: "#3d7a5c18", borderColor: "#3d7a5c40", color: "#3d7a5c" }}>
+            <span className="text-sm py-1.5 px-4 rounded-full border font-medium" style={{ backgroundColor: "#46315C30", borderColor: "#68507B60", color: "#B3A3BA" }}>
               English <span className="ml-2 font-normal opacity-80">Fluent</span>
             </span>
           </div>
