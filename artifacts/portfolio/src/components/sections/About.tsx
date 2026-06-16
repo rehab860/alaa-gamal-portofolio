@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const About = () => {
@@ -46,9 +46,9 @@ export const About = () => {
                 </CardContent>
               </Card>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-4">
+              <div className="flex flex-col gap-4 pt-4">
                 <div className="flex items-center gap-3 text-muted-foreground">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
@@ -59,7 +59,18 @@ export const About = () => {
                   </div>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+                    <Phone className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-medium uppercase tracking-wider">Phone</p>
+                    <a href="tel:+201142589289" className="text-sm text-foreground hover:text-primary transition-colors" data-testid="link-phone">
+                      +201142589289
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 text-muted-foreground">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
