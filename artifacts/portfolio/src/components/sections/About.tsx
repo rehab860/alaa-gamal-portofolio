@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const About = () => {
@@ -55,17 +55,6 @@ export const About = () => {
                     <p className="text-xs font-medium uppercase tracking-wider">Email</p>
                     <a href="mailto:alaagamal292003@gmail.com" className="text-sm text-foreground hover:text-primary transition-colors" data-testid="link-email">
                       alaagamal292003@gmail.com
-                    </a>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3 text-muted-foreground">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                    <Phone className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <p className="text-xs font-medium uppercase tracking-wider">Phone</p>
-                    <a href="tel:+201142589289" className="text-sm text-foreground hover:text-primary transition-colors" data-testid="link-phone">
-                      +201142589289
                     </a>
                   </div>
                 </div>
