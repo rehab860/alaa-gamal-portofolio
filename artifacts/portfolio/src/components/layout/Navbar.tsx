@@ -6,13 +6,13 @@ import { Button } from "@/components/ui/button";
 export const Logo = ({ className = "" }: { className?: string }) => (
   <div className={`flex flex-col items-center ${className}`}>
     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="40" height="40" rx="8" fill="#0f172a" />
-      <path d="M14 28L20 12L26 28" stroke="#14b8a6" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M16 22H24" stroke="#14b8a6" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M30 18C28.5 16 25 15 22 17C19 19 19 23 22 25C25 27 28 26 30 24" stroke="#f1f5f9" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-      <circle cx="20" cy="12" r="2" fill="#14b8a6" />
-      <circle cx="14" cy="28" r="2" fill="#14b8a6" />
-      <circle cx="26" cy="28" r="2" fill="#14b8a6" />
+      <rect width="40" height="40" rx="8" fill="#1a140c" />
+      {/* A — antique gold */}
+      <path d="M7 29L13 11L19 29" stroke="#9a7640" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M9 23H17" stroke="#9a7640" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="13" cy="11" r="1.8" fill="#9a7640" />
+      {/* G — dusty rose: C-arc + inner spur making it clearly a G */}
+      <path d="M33 15C31.5 12.5 28.5 11 25.5 11C21 11 18 14.5 18 20C18 25.5 21 29 25.5 29C28.5 29 31 27.5 32.5 25.5L27 25.5L27 20L33 20" stroke="#b85c6e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
     <span className="text-xs font-semibold mt-1 tracking-wider text-foreground">AG</span>
   </div>

@@ -1,14 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Database, LineChart, Code2, Cpu, Wrench, Settings } from "lucide-react";
+import { Wrench, Settings, Cpu } from "lucide-react";
 
 export const Skills = () => {
   const skillCategories = [
     {
       title: "Tools & Technologies",
-      icon: <Wrench className="w-5 h-5 text-primary" />,
+      icon: <Wrench className="w-5 h-5" style={{ color: "#9a7640" }} />,
+      barColor: "#9a7640",
       skills: [
         { name: "Excel (Advanced)", level: 90 },
         { name: "Power BI", level: 85 },
@@ -19,6 +19,7 @@ export const Skills = () => {
     {
       title: "Core Processes",
       icon: <Settings className="w-5 h-5 text-primary" />,
+      barColor: "#b85c6e",
       skills: [
         { name: "ETL", level: 85 },
         { name: "Data Cleaning", level: 90 },
@@ -28,7 +29,8 @@ export const Skills = () => {
     },
     {
       title: "Concepts",
-      icon: <Cpu className="w-5 h-5 text-primary" />,
+      icon: <Cpu className="w-5 h-5" style={{ color: "#3d7a5c" }} />,
+      barColor: "#3d7a5c",
       skills: [
         { name: "Statistics", level: 80 },
         { name: "Data Modeling", level: 75 },
@@ -67,7 +69,7 @@ export const Skills = () => {
               <Card className="h-full bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/30 transition-all duration-300">
                 <CardHeader className="pb-4">
                   <CardTitle className="flex items-center gap-3 text-xl">
-                    <div className="p-2 rounded-md bg-primary/10">
+                    <div className="p-2 rounded-md" style={{ backgroundColor: `${category.barColor}18` }}>
                       {category.icon}
                     </div>
                     {category.title}
@@ -86,7 +88,8 @@ export const Skills = () => {
                           whileInView={{ width: `${skill.level}%` }}
                           viewport={{ once: true }}
                           transition={{ duration: 1, delay: 0.2 + idx * 0.1, ease: "easeOut" }}
-                          className="h-full bg-primary rounded-full relative"
+                          className="h-full rounded-full relative"
+                          style={{ backgroundColor: category.barColor }}
                         >
                           <div className="absolute top-0 right-0 bottom-0 left-0 bg-gradient-to-r from-transparent to-white/20" />
                         </motion.div>
@@ -108,12 +111,12 @@ export const Skills = () => {
         >
           <h3 className="text-lg font-semibold mb-4 text-muted-foreground uppercase tracking-widest">Languages</h3>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Badge variant="outline" className="text-sm py-1.5 px-4 bg-card hover:bg-card/80 border-primary/20 text-foreground">
-              Arabic <span className="text-primary ml-2 font-normal">Native</span>
-            </Badge>
-            <Badge variant="outline" className="text-sm py-1.5 px-4 bg-card hover:bg-card/80 border-primary/20 text-foreground">
-              English <span className="text-primary ml-2 font-normal">Fluent</span>
-            </Badge>
+            <span className="text-sm py-1.5 px-4 rounded-full border font-medium" style={{ backgroundColor: "#3d7a5c18", borderColor: "#3d7a5c40", color: "#3d7a5c" }}>
+              Arabic <span className="ml-2 font-normal opacity-80">Native</span>
+            </span>
+            <span className="text-sm py-1.5 px-4 rounded-full border font-medium" style={{ backgroundColor: "#3d7a5c18", borderColor: "#3d7a5c40", color: "#3d7a5c" }}>
+              English <span className="ml-2 font-normal opacity-80">Fluent</span>
+            </span>
           </div>
         </motion.div>
       </div>
