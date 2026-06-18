@@ -69,7 +69,7 @@ set PORT=5173 && set BASE_PATH=/ && pnpm dev
 PORT=5173 BASE_PATH=/ pnpm dev
 ```
 
-Once running, open [http://localhost:5173](http://localhost:5173) in your browser.
+
 
 ### Building for Production
 
@@ -80,14 +80,4 @@ PORT=5173 BASE_PATH=/ pnpm build
 
 Output is generated in `artifacts/portfolio/dist/public`.
 
-## Featured Projects
 
-| Project | Tool | Description |
-|---|---|---|
-| Sales Performance Dashboard | Power BI | Interactive dashboard tracking revenue, regional sales, and KPIs to support data-driven business decisions. |
-| E-Commerce Customer Insights | Python (EDA) | Exploratory analysis of customer behavior and purchase patterns using Python, Pandas, and data visualization. |
-| Inventory Optimization Query Set | SQL | A set of SQL queries analyzing stock levels, supplier performance, and reorder points to optimize inventory. |
-
-## License
-
-MIT
