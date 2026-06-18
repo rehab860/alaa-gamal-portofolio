@@ -9,18 +9,21 @@ export const Projects = () => {
     {
       title: "Sales Performance Dashboard",
       category: "Power BI Dashboard",
+      subtitle: "Interactive dashboard tracking revenue, regional sales, and KPIs to support data-driven business decisions.",
       icon: <PieChart className="w-10 h-10" />,
       color: "text-blue-400"
     },
     {
       title: "E-Commerce Customer Insights",
       category: "Python EDA",
+      subtitle: "Exploratory analysis of customer behavior and purchase patterns using Python, Pandas, and data visualization.",
       icon: <Code className="w-10 h-10" />,
       color: "text-green-400"
     },
     {
       title: "Inventory Optimization Query Set",
       category: "SQL Analysis",
+      subtitle: "A set of SQL queries analyzing stock levels, supplier performance, and reorder points to optimize inventory.",
       icon: <Database className="w-10 h-10" />,
       color: "text-purple-400"
     }
@@ -34,15 +37,13 @@ export const Projects = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
-          className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-4"
+          className="mb-12 text-center"
         >
-          <div>
-            <h2 className="text-3xl font-bold mb-2">Featured Projects</h2>
-            <div className="w-12 h-1 bg-primary rounded-full" />
-            <p className="text-muted-foreground mt-4 max-w-xl">
-              A selection of analytical deep-dives and dashboards demonstrating practical problem-solving with data.
-            </p>
-          </div>
+          <h2 className="text-3xl font-bold mb-2">Featured Projects</h2>
+          <div className="w-12 h-1 bg-primary mx-auto rounded-full" />
+          <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
+            A selection of analytical deep-dives and dashboards demonstrating practical problem-solving with data.
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -70,12 +71,9 @@ export const Projects = () => {
                 <CardContent className="flex-1 p-6">
                   <p className="text-sm font-medium text-primary mb-2">{project.category}</p>
                   <h3 className="text-xl font-bold mb-3">{project.title}</h3>
-                  <div className="w-full h-2 bg-muted rounded-full overflow-hidden mt-6">
-                    <div className="w-full h-full bg-muted-foreground/20 animate-pulse" />
-                  </div>
-                  <div className="w-3/4 h-2 bg-muted rounded-full overflow-hidden mt-2">
-                    <div className="w-full h-full bg-muted-foreground/20 animate-pulse" />
-                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed mt-4">
+                    {project.subtitle}
+                  </p>
                 </CardContent>
                 
                 <CardFooter className="p-6 pt-0">

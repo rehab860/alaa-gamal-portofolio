@@ -114,11 +114,11 @@ export const Skills = () => {
         >
           <h3 className="text-lg font-semibold mb-4 text-muted-foreground uppercase tracking-widest">Languages</h3>
           <div className="flex flex-wrap gap-4 justify-center">
-            <span className="text-sm py-1.5 px-4 rounded-full border font-medium" style={{ backgroundColor: "#46315C30", borderColor: "#68507B60", color: "#B3A3BA" }}>
-              Arabic <span className="ml-2 font-normal opacity-80">Native</span>
+            <span className="text-sm py-1.5 px-4 rounded-full border font-medium" style={{ backgroundColor: "#46315C30", borderColor: "#68507B60", color: "#09090b" }}>
+              Arabic <span className="ml-2 font-normal opacity-90">Native</span>
             </span>
-            <span className="text-sm py-1.5 px-4 rounded-full border font-medium" style={{ backgroundColor: "#46315C30", borderColor: "#68507B60", color: "#B3A3BA" }}>
-              English <span className="ml-2 font-normal opacity-80">Fluent</span>
+            <span className="text-sm py-1.5 px-4 rounded-full border font-medium" style={{ backgroundColor: "#46315C30", borderColor: "#68507B60", color: "#09090b" }}>
+              English <span className="ml-2 font-normal opacity-90">Fluent</span>
             </span>
           </div>
         </motion.div>

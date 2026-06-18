@@ -5,18 +5,11 @@ import { Button } from "@/components/ui/button";
 
 export const Logo = ({ className = "" }: { className?: string }) => (
   <div className={`flex flex-col items-center ${className}`}>
-    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* #28193D outer shell */}
-      <rect width="40" height="40" rx="8" fill="#28193D" />
-      {/* #46315C inner border ring */}
-      <rect x="2" y="2" width="36" height="36" rx="6" fill="none" stroke="#46315C" strokeWidth="1" />
-      {/* A — #B3A3BA light lavender */}
-      <path d="M7 29L13 11L19 29" stroke="#B3A3BA" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M9 23H17" stroke="#B3A3BA" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-      <circle cx="13" cy="11" r="1.8" fill="#B3A3BA" />
-      {/* G — #8D769A tallest bar / main accent — arc + spur */}
-      <path d="M33 15C31.5 12.5 28.5 11 25.5 11C21 11 18 14.5 18 20C18 25.5 21 29 25.5 29C28.5 29 31 27.5 32.5 25.5L27 25.5L27 20L33 20" stroke="#8D769A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
+    <img 
+      src="/logo.png" 
+      alt="AG Logo" 
+      className="w-10 h-10 object-contain rounded-lg shadow-sm border border-border/10"
+    />
     <span className="text-xs font-semibold mt-1 tracking-wider text-foreground">AG</span>
   </div>
 );

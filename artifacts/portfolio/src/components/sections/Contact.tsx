@@ -66,7 +66,7 @@ export const Contact = () => {
                   </a>
                   
                   <a 
-                    href="#" 
+                    href="https://www.linkedin.com/in/alaa-gamal-170407348" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 p-3 rounded-lg hover:bg-muted transition-colors group"
