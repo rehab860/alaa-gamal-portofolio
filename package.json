@@ -2,6 +2,7 @@
   "name": "alaa-gamal-portfolio",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@11.8.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
