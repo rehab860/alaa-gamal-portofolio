@@ -195,10 +195,15 @@ export const Hero = () => {
             size="lg" 
             variant="outline"
             className="rounded-full px-8 font-medium border-border hover:bg-muted"
-            onClick={() => window.open("#", "_blank")}
+            asChild
             data-testid="button-download-cv"
           >
-            Download CV
+            <a 
+              href="/Alaa_Gamal_Data_Analyst_ATS.docx" 
+              download="Alaa_Gamal_Data_Analyst_ATS.docx"
+            >
+              Download CV
+            </a>
           </Button>
         </motion.div>
       </div>
